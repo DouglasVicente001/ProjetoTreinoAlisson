@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "iA44SFHJ+9nfzrblkP2swq7Bl6kUMoOOOrGMhD0WeloLMz0qr9lXtdzv/LMirBUVhL7W+gu9WE4EmaEpUkd/FQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\DSVE\\OneDrive - GFT Technologies SE\\Desktop\\Treino\\TreinoAlisson\\GerenciadorTarefas-Api\\GerenciadorTarefas-Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DSVE\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\DSVE\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\DSVE\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\DSVE\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\DSVE\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\DSVE\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}

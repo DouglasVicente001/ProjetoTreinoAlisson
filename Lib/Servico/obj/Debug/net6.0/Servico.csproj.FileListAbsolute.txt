@@ -1,0 +1,12 @@
+C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\Lib\Servico\bin\Debug\net6.0\Servico.deps.json
+C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\Lib\Servico\bin\Debug\net6.0\Servico.dll
+C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\Lib\Servico\bin\Debug\net6.0\Servico.pdb
+C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\Lib\Servico\obj\Debug\net6.0\Servico.csproj.AssemblyReference.cache
+C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\Lib\Servico\obj\Debug\net6.0\Servico.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\Lib\Servico\obj\Debug\net6.0\Servico.AssemblyInfoInputs.cache
+C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\Lib\Servico\obj\Debug\net6.0\Servico.AssemblyInfo.cs
+C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\Lib\Servico\obj\Debug\net6.0\Servico.csproj.CoreCompileInputs.cache
+C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\Lib\Servico\obj\Debug\net6.0\Servico.dll
+C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\Lib\Servico\obj\Debug\net6.0\refint\Servico.dll
+C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\Lib\Servico\obj\Debug\net6.0\Servico.pdb
+C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\Lib\Servico\obj\Debug\net6.0\ref\Servico.dll
