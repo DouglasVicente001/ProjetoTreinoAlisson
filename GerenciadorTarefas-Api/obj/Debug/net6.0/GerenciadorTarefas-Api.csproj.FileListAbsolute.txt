@@ -59,3 +59,4 @@ C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\Gerenc
 C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\GerenciadorTarefas-Api\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\GerenciadorTarefas-Api\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\GerenciadorTarefas-Api\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\GerenciadorTarefas-Api\bin\Debug\net6.0\Newtonsoft.Json.dll

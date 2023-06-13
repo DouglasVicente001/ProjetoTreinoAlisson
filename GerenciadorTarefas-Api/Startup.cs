@@ -16,6 +16,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using Newtonsoft.Json.Linq;
 
 namespace GerenciadorTarefas_Api
 {
@@ -52,6 +53,9 @@ namespace GerenciadorTarefas_Api
                 };
             });
 
+            // Adicione as dependências
+            // services.AddScoped(typeof(Servico<>), typeof(SuaImplementacaoServico<>));
+
             services.AddControllers()
             .AddJsonOptions(options =>
             {
@@ -87,6 +91,7 @@ namespace GerenciadorTarefas_Api
             app.UseRouting();
 
             app.UseAuthorization();
+            
 
             app.UseEndpoints(endpoints =>
             {

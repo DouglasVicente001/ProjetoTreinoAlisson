@@ -2,13 +2,13 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace GerenciadorTarefas_Api.Models
 {
     public class Tarefa
-    {
-        [Key]
+    {   
         public int Id { get; set; }
         
         [Required(ErrorMessage = "O campo é obrigatório")]
