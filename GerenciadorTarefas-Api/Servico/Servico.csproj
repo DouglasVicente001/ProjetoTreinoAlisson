@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="/Entidade/Entidade.csproj">
+    <Reference Include="/Repositorio/Repositorio.csproj">
+    <Reference Include="/GerenciadorTarefas-Api.csproj">
+  </ItemGroup>
+</Project>

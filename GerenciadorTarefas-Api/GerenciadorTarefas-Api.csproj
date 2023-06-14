@@ -22,13 +22,6 @@
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="7.0.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.0" />
-  </ItemGroup>
-  
-  <ItemGroup> 
-    <!-->Isto faz as referências das Lib para o GerenciadorTarefas-api</!-->
-    <!-- <ProjectReference Include="Repositorio/Repositorio.csproj" />
-    <ProjectReference Include="Servico/Servico.csproj" /> -->
-
-  </ItemGroup>
-
+    </ItemGroup>
 </Project>
+
