@@ -26,8 +26,8 @@
   
   <ItemGroup> 
     <!-->Isto faz as referências das Lib para o GerenciadorTarefas-api</!-->
-    <ProjectReference Include="Repositorio/Repositorio.csproj" />
-    <ProjectReference Include="Servico/Servico.csproj" />
+    <!-- <ProjectReference Include="Repositorio/Repositorio.csproj" />
+    <ProjectReference Include="Servico/Servico.csproj" /> -->
 
   </ItemGroup>
 
