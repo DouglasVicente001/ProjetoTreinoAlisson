@@ -6,12 +6,12 @@ namespace GerenciadorTarefas_Api.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class GenericoController : ControllerBase 
+    public class TarefasController : ControllerBase 
     {
 
         private readonly GerenciadorTarefasContext database;
 
-        public GenericoController(GerenciadorTarefasContext database)
+        public TarefasController(GerenciadorTarefasContext database)
         {
             this.database = database;
         }
