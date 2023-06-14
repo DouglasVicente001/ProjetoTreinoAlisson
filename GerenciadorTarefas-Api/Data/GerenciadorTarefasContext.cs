@@ -7,9 +7,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace GerenciadorTarefas_Api.Data
 {
-    public class ApiDbContext : DbContext
+    public class GerenciadorTarefasContext : DbContext
     {
-        public ApiDbContext(DbContextOptions<ApiDbContext> options) : base(options)
+        public GerenciadorTarefasContext(DbContextOptions<GerenciadorTarefasContext> options) : base(options)
         {
             
         }

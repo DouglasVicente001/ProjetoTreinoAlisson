@@ -1,9 +1,7 @@
+using System.Linq;
 using GerenciadorTarefas_Api.Data;
 using GerenciadorTarefas_Api.Models;
 using Microsoft.AspNetCore.Mvc;
-using Repositorio;
-using Servico;
-
 namespace GerenciadorTarefas_Api.Controllers
 {
     [ApiController]
@@ -11,9 +9,9 @@ namespace GerenciadorTarefas_Api.Controllers
     public class GenericoController : ControllerBase 
     {
 
-        private readonly ApiDbContext database;
+        private readonly GerenciadorTarefasContext database;
 
-        public GenericoController(ApiDbContext database)
+        public GenericoController(GerenciadorTarefasContext database)
         {
             this.database = database;
         }

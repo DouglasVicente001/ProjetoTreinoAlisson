@@ -33,7 +33,7 @@ namespace GerenciadorTarefas_Api
         public void ConfigureServices(IServiceCollection services)
         {
             string stringConnection = Configuration.GetConnectionString("DefaultConnection");
-            services.AddDbContext<ApiDbContext>(options =>
+            services.AddDbContext<GerenciadorTarefasContext>(options =>
                 options.UseMySql(stringConnection, ServerVersion.AutoDetect(stringConnection)));
 
 
