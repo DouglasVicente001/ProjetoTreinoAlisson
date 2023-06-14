@@ -60,3 +60,9 @@ C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\Gerenc
 C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\GerenciadorTarefas-Api\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\GerenciadorTarefas-Api\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\GerenciadorTarefas-Api\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\GerenciadorTarefas-Api\bin\Debug\net6.0\Repositorio\bin\Debug\net6.0\Repositorio.deps.json
+C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\GerenciadorTarefas-Api\bin\Debug\net6.0\Repositorio\obj\project.assets.json
+C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\GerenciadorTarefas-Api\bin\Debug\net6.0\Repositorio\obj\Repositorio.csproj.nuget.dgspec.json
+C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\GerenciadorTarefas-Api\bin\Debug\net6.0\Servico\bin\Debug\net6.0\Servico.deps.json
+C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\GerenciadorTarefas-Api\bin\Debug\net6.0\Servico\obj\project.assets.json
+C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\GerenciadorTarefas-Api\bin\Debug\net6.0\Servico\obj\Servico.csproj.nuget.dgspec.json

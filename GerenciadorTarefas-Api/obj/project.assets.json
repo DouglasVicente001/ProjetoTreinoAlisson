@@ -1790,13 +1790,13 @@
     },
     "Repositorio/1.0.0": {
       "type": "project",
-      "path": "../Lib/Repositorio/Repositorio.csproj",
-      "msbuildProject": "../Lib/Repositorio/Repositorio.csproj"
+      "path": "Repositorio/Repositorio.csproj",
+      "msbuildProject": "Repositorio/Repositorio.csproj"
     },
     "Servico/1.0.0": {
       "type": "project",
-      "path": "../Lib/Servico/Servico.csproj",
-      "msbuildProject": "../Lib/Servico/Servico.csproj"
+      "path": "Servico/Servico.csproj",
+      "msbuildProject": "Servico/Servico.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1838,11 +1838,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\DSVE\\OneDrive - GFT Technologies SE\\Desktop\\Treino\\TreinoAlisson\\Lib\\Repositorio\\Repositorio.csproj": {
-              "projectPath": "C:\\Users\\DSVE\\OneDrive - GFT Technologies SE\\Desktop\\Treino\\TreinoAlisson\\Lib\\Repositorio\\Repositorio.csproj"
+            "C:\\Users\\DSVE\\OneDrive - GFT Technologies SE\\Desktop\\Treino\\TreinoAlisson\\GerenciadorTarefas-Api\\Repositorio\\Repositorio.csproj": {
+              "projectPath": "C:\\Users\\DSVE\\OneDrive - GFT Technologies SE\\Desktop\\Treino\\TreinoAlisson\\GerenciadorTarefas-Api\\Repositorio\\Repositorio.csproj"
             },
-            "C:\\Users\\DSVE\\OneDrive - GFT Technologies SE\\Desktop\\Treino\\TreinoAlisson\\Lib\\Servico\\Servico.csproj": {
-              "projectPath": "C:\\Users\\DSVE\\OneDrive - GFT Technologies SE\\Desktop\\Treino\\TreinoAlisson\\Lib\\Servico\\Servico.csproj"
+            "C:\\Users\\DSVE\\OneDrive - GFT Technologies SE\\Desktop\\Treino\\TreinoAlisson\\GerenciadorTarefas-Api\\Servico\\Servico.csproj": {
+              "projectPath": "C:\\Users\\DSVE\\OneDrive - GFT Technologies SE\\Desktop\\Treino\\TreinoAlisson\\GerenciadorTarefas-Api\\Servico\\Servico.csproj"
             }
           }
         }
