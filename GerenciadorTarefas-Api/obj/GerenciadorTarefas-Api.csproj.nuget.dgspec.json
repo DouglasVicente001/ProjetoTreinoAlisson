@@ -26,11 +26,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\DSVE\\OneDrive - GFT Technologies SE\\Desktop\\Treino\\TreinoAlisson\\Lib\\Repositorio\\Repositorio.csproj": {
-                "projectPath": "C:\\Users\\DSVE\\OneDrive - GFT Technologies SE\\Desktop\\Treino\\TreinoAlisson\\Lib\\Repositorio\\Repositorio.csproj"
+              "C:\\Users\\DSVE\\OneDrive - GFT Technologies SE\\Desktop\\Treino\\TreinoAlisson\\GerenciadorTarefas-Api\\Repositorio\\Repositorio.csproj": {
+                "projectPath": "C:\\Users\\DSVE\\OneDrive - GFT Technologies SE\\Desktop\\Treino\\TreinoAlisson\\GerenciadorTarefas-Api\\Repositorio\\Repositorio.csproj"
               },
-              "C:\\Users\\DSVE\\OneDrive - GFT Technologies SE\\Desktop\\Treino\\TreinoAlisson\\Lib\\Servico\\Servico.csproj": {
-                "projectPath": "C:\\Users\\DSVE\\OneDrive - GFT Technologies SE\\Desktop\\Treino\\TreinoAlisson\\Lib\\Servico\\Servico.csproj"
+              "C:\\Users\\DSVE\\OneDrive - GFT Technologies SE\\Desktop\\Treino\\TreinoAlisson\\GerenciadorTarefas-Api\\Servico\\Servico.csproj": {
+                "projectPath": "C:\\Users\\DSVE\\OneDrive - GFT Technologies SE\\Desktop\\Treino\\TreinoAlisson\\GerenciadorTarefas-Api\\Servico\\Servico.csproj"
               }
             }
           }
@@ -105,14 +105,14 @@
         }
       }
     },
-    "C:\\Users\\DSVE\\OneDrive - GFT Technologies SE\\Desktop\\Treino\\TreinoAlisson\\Lib\\Repositorio\\Repositorio.csproj": {
+    "C:\\Users\\DSVE\\OneDrive - GFT Technologies SE\\Desktop\\Treino\\TreinoAlisson\\GerenciadorTarefas-Api\\Repositorio\\Repositorio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DSVE\\OneDrive - GFT Technologies SE\\Desktop\\Treino\\TreinoAlisson\\Lib\\Repositorio\\Repositorio.csproj",
+        "projectUniqueName": "C:\\Users\\DSVE\\OneDrive - GFT Technologies SE\\Desktop\\Treino\\TreinoAlisson\\GerenciadorTarefas-Api\\Repositorio\\Repositorio.csproj",
         "projectName": "Repositorio",
-        "projectPath": "C:\\Users\\DSVE\\OneDrive - GFT Technologies SE\\Desktop\\Treino\\TreinoAlisson\\Lib\\Repositorio\\Repositorio.csproj",
+        "projectPath": "C:\\Users\\DSVE\\OneDrive - GFT Technologies SE\\Desktop\\Treino\\TreinoAlisson\\GerenciadorTarefas-Api\\Repositorio\\Repositorio.csproj",
         "packagesPath": "C:\\Users\\DSVE\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DSVE\\OneDrive - GFT Technologies SE\\Desktop\\Treino\\TreinoAlisson\\Lib\\Repositorio\\obj\\",
+        "outputPath": "C:\\Users\\DSVE\\OneDrive - GFT Technologies SE\\Desktop\\Treino\\TreinoAlisson\\GerenciadorTarefas-Api\\Repositorio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DSVE\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -158,14 +158,14 @@
         }
       }
     },
-    "C:\\Users\\DSVE\\OneDrive - GFT Technologies SE\\Desktop\\Treino\\TreinoAlisson\\Lib\\Servico\\Servico.csproj": {
+    "C:\\Users\\DSVE\\OneDrive - GFT Technologies SE\\Desktop\\Treino\\TreinoAlisson\\GerenciadorTarefas-Api\\Servico\\Servico.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DSVE\\OneDrive - GFT Technologies SE\\Desktop\\Treino\\TreinoAlisson\\Lib\\Servico\\Servico.csproj",
+        "projectUniqueName": "C:\\Users\\DSVE\\OneDrive - GFT Technologies SE\\Desktop\\Treino\\TreinoAlisson\\GerenciadorTarefas-Api\\Servico\\Servico.csproj",
         "projectName": "Servico",
-        "projectPath": "C:\\Users\\DSVE\\OneDrive - GFT Technologies SE\\Desktop\\Treino\\TreinoAlisson\\Lib\\Servico\\Servico.csproj",
+        "projectPath": "C:\\Users\\DSVE\\OneDrive - GFT Technologies SE\\Desktop\\Treino\\TreinoAlisson\\GerenciadorTarefas-Api\\Servico\\Servico.csproj",
         "packagesPath": "C:\\Users\\DSVE\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DSVE\\OneDrive - GFT Technologies SE\\Desktop\\Treino\\TreinoAlisson\\Lib\\Servico\\obj\\",
+        "outputPath": "C:\\Users\\DSVE\\OneDrive - GFT Technologies SE\\Desktop\\Treino\\TreinoAlisson\\GerenciadorTarefas-Api\\Servico\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DSVE\\AppData\\Roaming\\NuGet\\NuGet.Config"
