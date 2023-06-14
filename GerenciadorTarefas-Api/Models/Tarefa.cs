@@ -13,11 +13,11 @@ namespace GerenciadorTarefas_Api.Models
         
         [Required(ErrorMessage = "O campo é obrigatório")]
         [StringLength (40, MinimumLength = 3, ErrorMessage = "O campo título deve ter entre 3/40 caracteres")] 
-        public string ?Titulo { get; set; }
+        public string? Titulo { get; set; }
 
         [Required(ErrorMessage = "O campo é obrigatório")]
         [StringLength (40, MinimumLength = 3, ErrorMessage = "O campo descrição deve ter entre 3/40 caracteres")] 
-        public string ?Descricao { get; set; }
+        public string? Descricao { get; set; }
         public bool Status { get; set; }
     }
 }
