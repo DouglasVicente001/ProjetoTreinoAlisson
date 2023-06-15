@@ -1,5 +1,5 @@
 using System.Linq;
-using GerenciadorTarefas_Api.Models;
+using Entidade;
 using Microsoft.AspNetCore.Mvc;
 using Repositorio.DataContext;
 

@@ -1,6 +1,7 @@
 
 
-using GerenciadorTarefas_Api.Models;
+
+using Entidade;
 using Microsoft.EntityFrameworkCore;
 
 namespace Repositorio.DataContext

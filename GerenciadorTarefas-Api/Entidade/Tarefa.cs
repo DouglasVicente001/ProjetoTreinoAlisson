@@ -2,7 +2,7 @@
 
 using System.ComponentModel.DataAnnotations;
 
-namespace GerenciadorTarefas_Api.Models
+namespace Entidade
 {
     public class Tarefa
     {   
