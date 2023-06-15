@@ -1,7 +1,22 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using GerenciadorTarefas_Api.Data;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-
-using Repositorio.ConfigureServices;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
+using Newtonsoft.Json.Linq;
 
 namespace GerenciadorTarefas_Api
 {
@@ -14,18 +29,59 @@ namespace GerenciadorTarefas_Api
 
         public IConfiguration Configuration { get; }
 
+        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             string stringConnection = Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<GerenciadorTarefasContext>(options =>
-            options.UseMySql(stringConnection, ServerVersion.AutoDetect(stringConnection)));
+                options.UseMySql(stringConnection, ServerVersion.AutoDetect(stringConnection)));
 
-            ConfigureServicesExtensao.ConfigureServices(services);
+
+            
+            // Adicione as dependências
+            // services.AddScoped(typeof(Servico<>), typeof(SuaImplementacaoServico<>));
+
+            services.AddControllers()
+            .AddJsonOptions(options =>
+            {
+                options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve;
+                options.JsonSerializerOptions.PropertyNameCaseInsensitive = true;
+                options.JsonSerializerOptions.PropertyNamingPolicy = null;
+            })
+            .ConfigureApiBehaviorOptions(options =>
+            {
+                // Configurações adicionais do comportamento da API, se necessário.
+            });
+
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "ProjetoAPI", Version = "v1" });
+            });
         }
 
-        public void Configure(IServiceCollection services,IApplicationBuilder app, IWebHostEnvironment env)
+        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-           ConfiguracaoStartup.Configure(services, app, env);
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+                app.UseSwagger();
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "ProjetoAPI v1"));
+            }
+
+            app.UseHttpsRedirection();
+
+            app.UseAuthentication(); // Isso que aplica autenticação na api.
+
+            app.UseRouting();
+
+            app.UseAuthorization();
+            
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllers();
+            });
         }
     }
 }
