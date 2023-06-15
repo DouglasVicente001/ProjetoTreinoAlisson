@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="/GerenciadorTarefas-Api.csproj" />
+    <Reference Include="/Repositorio/Repositorio.csproj" />
   </ItemGroup>
 
 </Project>

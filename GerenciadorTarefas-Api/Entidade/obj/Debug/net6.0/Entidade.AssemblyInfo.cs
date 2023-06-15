@@ -10,12 +10,12 @@
 // using System;
 // using System.Reflection;
 
-// [assembly: System.Reflection.AssemblyCompanyAttribute("GerenciadorTarefas-Api")]
+// [assembly: System.Reflection.AssemblyCompanyAttribute("Entidade")]
 // [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 // [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 // [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-// [assembly: System.Reflection.AssemblyProductAttribute("GerenciadorTarefas-Api")]
-// [assembly: System.Reflection.AssemblyTitleAttribute("GerenciadorTarefas-Api")]
+// [assembly: System.Reflection.AssemblyProductAttribute("Entidade")]
+// [assembly: System.Reflection.AssemblyTitleAttribute("Entidade")]
 // [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // // Gerado pela classe WriteCodeFragment do MSBuild.

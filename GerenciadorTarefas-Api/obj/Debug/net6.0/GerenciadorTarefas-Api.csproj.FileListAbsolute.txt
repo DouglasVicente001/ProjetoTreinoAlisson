@@ -6,7 +6,6 @@ C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\Gerenc
 C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\GerenciadorTarefas-Api\bin\Debug\net6.0\GerenciadorTarefas-Api.dll
 C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\GerenciadorTarefas-Api\bin\Debug\net6.0\GerenciadorTarefas-Api.pdb
 C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\GerenciadorTarefas-Api\bin\Debug\net6.0\Humanizer.dll
-C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\GerenciadorTarefas-Api\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\GerenciadorTarefas-Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\GerenciadorTarefas-Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\GerenciadorTarefas-Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
@@ -22,10 +21,7 @@ C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\Gerenc
 C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\GerenciadorTarefas-Api\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
 C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\GerenciadorTarefas-Api\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
 C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\GerenciadorTarefas-Api\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
-C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\GerenciadorTarefas-Api\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
 C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\GerenciadorTarefas-Api\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
-C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\GerenciadorTarefas-Api\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
-C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\GerenciadorTarefas-Api\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\GerenciadorTarefas-Api\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\GerenciadorTarefas-Api\bin\Debug\net6.0\Microsoft.OpenApi.dll
 C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\GerenciadorTarefas-Api\bin\Debug\net6.0\Mono.TextTemplating.dll
@@ -36,7 +32,6 @@ C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\Gerenc
 C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\GerenciadorTarefas-Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\GerenciadorTarefas-Api\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\GerenciadorTarefas-Api\bin\Debug\net6.0\System.CodeDom.dll
-C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\GerenciadorTarefas-Api\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\GerenciadorTarefas-Api\bin\Debug\net6.0\System.Text.Encodings.Web.dll
 C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\GerenciadorTarefas-Api\bin\Debug\net6.0\System.Text.Json.dll
 C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\GerenciadorTarefas-Api\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
@@ -56,7 +51,3 @@ C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\Gerenc
 C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\GerenciadorTarefas-Api\obj\Debug\net6.0\GerenciadorTarefas-Api.pdb
 C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\GerenciadorTarefas-Api\obj\Debug\net6.0\GerenciadorTarefas-Api.genruntimeconfig.cache
 C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\GerenciadorTarefas-Api\obj\Debug\net6.0\ref\GerenciadorTarefas-Api.dll
-C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\GerenciadorTarefas-Api\bin\Debug\net6.0\Entidade\obj\Entidade.csproj.nuget.dgspec.json
-C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\GerenciadorTarefas-Api\bin\Debug\net6.0\Entidade\obj\project.assets.json
-C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\GerenciadorTarefas-Api\bin\Debug\net6.0\Servico\obj\project.assets.json
-C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\GerenciadorTarefas-Api\bin\Debug\net6.0\Servico\obj\Servico.csproj.nuget.dgspec.json

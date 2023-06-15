@@ -3,7 +3,7 @@
 using GerenciadorTarefas_Api.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace GerenciadorTarefas_Api.Data
+namespace Repositorio.DataContext
 {
     public class GerenciadorTarefasContext : DbContext
     {

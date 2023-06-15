@@ -1,7 +1,8 @@
 using System.Linq;
-using GerenciadorTarefas_Api.Data;
 using GerenciadorTarefas_Api.Models;
 using Microsoft.AspNetCore.Mvc;
+using Repositorio.DataContext;
+
 namespace GerenciadorTarefas_Api.Controllers
 {
     [ApiController]
