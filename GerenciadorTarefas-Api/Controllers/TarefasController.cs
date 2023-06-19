@@ -2,83 +2,64 @@ using System.Linq;
 using Entidade;
 using Microsoft.AspNetCore.Mvc;
 using Repositorio.DataContext;
+using static Servico.TarefaServico;
 
 namespace GerenciadorTarefas_Api.Controllers
 {
+
     [ApiController]
-    [Route("[controller]")]
-    public class TarefasController : ControllerBase 
+    [Route("api/tarefa")]
+    public class TarefaController : ControllerBase
     {
+        private readonly TarefaService _TarefaService;
 
-        private readonly GerenciadorTarefasContext database;
-
-        public TarefasController(GerenciadorTarefasContext database)
+        public TarefaController(TarefaService TarefaService)
         {
-            this.database = database;
+            _TarefaService = TarefaService;
         }
 
-
         [HttpGet]
-        public IActionResult Get()
+        public async Task<IActionResult> GetAllTarefas()
         {
-            var items = database.Tarefa.ToList();
-            return Ok(items);
-        }  
+            var Tarefas = await _TarefaService.GetAllTarefasAsync();
+            return Ok(Tarefas);
+        }
 
         [HttpGet("{id}")]
-        public IActionResult Get(int id)
+        public async Task<IActionResult> GetTarefaById(int id)
         {
-            var item = database.Tarefa.FirstOrDefault(x => x.Id == id);
-            if (item == null)
+            var Tarefa = await _TarefaService.GetTarefaByIdAsync(id);
+            if (Tarefa == null)
                 return NotFound();
 
-            return Ok(item);
+            return Ok(Tarefa);
         }
 
         [HttpPost]
-        public IActionResult Post([FromBody] Tarefa tarefa)
-        {    
-            
-            tarefa.Descricao = tarefa.Descricao;
-            tarefa.Titulo = tarefa.Titulo;
-            tarefa.Status = tarefa.Status;
-
-            database.Add(tarefa);
-            database.SaveChanges();
-            Response.StatusCode = 200;
-            return new ObjectResult(tarefa);
-            // return Ok(tarefa);
-            // return CreatedAtAction(nameof(Get), new { id = item.Id }, item);
+        public async Task<IActionResult> AddTarefa(Tarefa Tarefa)
+        {
+            await _TarefaService.PostTarefaAsync(Tarefa);
+            return Ok();
         }
 
-        [HttpPatch]
-        public IActionResult Patch([FromBody] Tarefa tarefa)
+        [HttpPut]
+        public IActionResult UpdateTarefa(Tarefa Tarefa)
         {
-            var itens = database.Tarefa.First(x => x.Id == tarefa.Id);
-            itens.Id = tarefa.Id;
-            itens.Titulo = tarefa.Titulo;
-            itens.Descricao = tarefa.Descricao;
-            itens.Status = tarefa.Status;
-            database.SaveChanges();
-
-            return Ok(itens);
-            // return NoContent();
+            _TarefaService.UpdateTarefa(Tarefa);
+            return Ok();
         }
 
         [HttpDelete("{id}")]
-        public IActionResult Delete(int id)
+        public async Task<IActionResult> DeleteTarefaAsync(int id)
         {
-            var tarefa = database.Tarefa.FirstOrDefault(x => x.Id == id);
-
-            if (tarefa == null)
+            var Tarefa = await _TarefaService.GetTarefaByIdAsync(id);
+            if (Tarefa == null)
                 return NotFound();
 
-            database.Tarefa.Remove(tarefa);
-            database.SaveChanges();
-            Response.StatusCode = 200;
-            return Ok(tarefa);
-
-
+            _TarefaService.DeleteTarefa(Tarefa);
+            return Ok();
         }
+
+        
     }
 }

@@ -1608,11 +1608,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DSVE\\OneDrive - GFT Technologies SE\\Desktop\\Treino\\TreinoAlisson\\GerenciadorTarefas-Api\\GerenciadorTarefas-Api.csproj",
+      "projectUniqueName": "c:\\Users\\DSVE\\OneDrive - GFT Technologies SE\\Desktop\\Treino\\TreinoAlisson\\GerenciadorTarefas-Api\\GerenciadorTarefas-Api.csproj",
       "projectName": "GerenciadorTarefas-Api",
-      "projectPath": "C:\\Users\\DSVE\\OneDrive - GFT Technologies SE\\Desktop\\Treino\\TreinoAlisson\\GerenciadorTarefas-Api\\GerenciadorTarefas-Api.csproj",
+      "projectPath": "c:\\Users\\DSVE\\OneDrive - GFT Technologies SE\\Desktop\\Treino\\TreinoAlisson\\GerenciadorTarefas-Api\\GerenciadorTarefas-Api.csproj",
       "packagesPath": "C:\\Users\\DSVE\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DSVE\\OneDrive - GFT Technologies SE\\Desktop\\Treino\\TreinoAlisson\\GerenciadorTarefas-Api\\obj\\",
+      "outputPath": "c:\\Users\\DSVE\\OneDrive - GFT Technologies SE\\Desktop\\Treino\\TreinoAlisson\\GerenciadorTarefas-Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\DSVE\\AppData\\Roaming\\NuGet\\NuGet.Config"

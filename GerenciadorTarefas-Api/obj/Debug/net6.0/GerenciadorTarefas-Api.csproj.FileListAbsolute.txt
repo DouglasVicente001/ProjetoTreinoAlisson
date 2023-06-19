@@ -51,3 +51,5 @@ C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\Gerenc
 C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\GerenciadorTarefas-Api\obj\Debug\net6.0\GerenciadorTarefas-Api.pdb
 C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\GerenciadorTarefas-Api\obj\Debug\net6.0\GerenciadorTarefas-Api.genruntimeconfig.cache
 C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\GerenciadorTarefas-Api\obj\Debug\net6.0\ref\GerenciadorTarefas-Api.dll
+C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\GerenciadorTarefas-Api\bin\Debug\net6.0\Entidade\obj\Entidade.csproj.nuget.dgspec.json
+C:\Users\DSVE\OneDrive - GFT Technologies SE\Desktop\Treino\TreinoAlisson\GerenciadorTarefas-Api\bin\Debug\net6.0\Entidade\obj\project.assets.json

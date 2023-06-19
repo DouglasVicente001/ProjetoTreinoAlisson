@@ -5,7 +5,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-
+    
+  </ItemGroup>
   
   <ItemGroup Label="References">
     <ProjectReference Include="/Servico/Servico.csproj" />
