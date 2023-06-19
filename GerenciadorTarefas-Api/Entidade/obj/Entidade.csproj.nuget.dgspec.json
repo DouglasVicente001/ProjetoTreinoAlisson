@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\DSVE\\OneDrive - GFT Technologies SE\\Desktop\\Treino\\TreinoAlisson\\GerenciadorTarefas-Api\\Entidade\\Entidade.csproj": {}
+    "C:\\Users\\DSVE\\OneDrive - GFT Technologies SE\\Desktop\\Treino\\TreinoAlisson\\GerenciadorTarefas-Api\\Entidade\\Entidade.csproj": {}
   },
   "projects": {
-    "c:\\Users\\DSVE\\OneDrive - GFT Technologies SE\\Desktop\\Treino\\TreinoAlisson\\GerenciadorTarefas-Api\\Entidade\\Entidade.csproj": {
+    "C:\\Users\\DSVE\\OneDrive - GFT Technologies SE\\Desktop\\Treino\\TreinoAlisson\\GerenciadorTarefas-Api\\Entidade\\Entidade.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\DSVE\\OneDrive - GFT Technologies SE\\Desktop\\Treino\\TreinoAlisson\\GerenciadorTarefas-Api\\Entidade\\Entidade.csproj",
+        "projectUniqueName": "C:\\Users\\DSVE\\OneDrive - GFT Technologies SE\\Desktop\\Treino\\TreinoAlisson\\GerenciadorTarefas-Api\\Entidade\\Entidade.csproj",
         "projectName": "Entidade",
-        "projectPath": "c:\\Users\\DSVE\\OneDrive - GFT Technologies SE\\Desktop\\Treino\\TreinoAlisson\\GerenciadorTarefas-Api\\Entidade\\Entidade.csproj",
+        "projectPath": "C:\\Users\\DSVE\\OneDrive - GFT Technologies SE\\Desktop\\Treino\\TreinoAlisson\\GerenciadorTarefas-Api\\Entidade\\Entidade.csproj",
         "packagesPath": "C:\\Users\\DSVE\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\DSVE\\OneDrive - GFT Technologies SE\\Desktop\\Treino\\TreinoAlisson\\GerenciadorTarefas-Api\\Entidade\\obj\\",
+        "outputPath": "C:\\Users\\DSVE\\OneDrive - GFT Technologies SE\\Desktop\\Treino\\TreinoAlisson\\GerenciadorTarefas-Api\\Entidade\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DSVE\\AppData\\Roaming\\NuGet\\NuGet.Config"

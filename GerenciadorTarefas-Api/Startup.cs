@@ -1,21 +1,13 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
+
+using Entidade;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Newtonsoft.Json.Linq;
+using Repositorio;
 using Repositorio.DataContext;
+using Repositorio.Interfaces;
+using Servico;
+using Servico.Interfaces;
 
 namespace GerenciadorTarefas_Api
 {
@@ -40,6 +32,10 @@ namespace GerenciadorTarefas_Api
             // Adicione as dependências
             // services.AddScoped(typeof(Servico<>), typeof(SuaImplementacaoServico<>));
 
+            services.AddTransient<ITarefaRepositorio<Tarefa>, TarefaRepositorio<Tarefa>>();
+            services.AddTransient<ITarefaServico, TarefaServico>();
+
+
             services.AddControllers()
             .AddJsonOptions(options =>
             {
@@ -56,6 +52,9 @@ namespace GerenciadorTarefas_Api
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "ProjetoAPI", Version = "v1" });
             });
+
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

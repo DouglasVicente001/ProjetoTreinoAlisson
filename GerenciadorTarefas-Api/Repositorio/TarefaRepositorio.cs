@@ -8,11 +8,11 @@ using Repositorio.Interfaces;
 
 namespace Repositorio
 {
-    public class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : class
+    public class TarefaRepositorio<TEntity> : ITarefaRepositorio<TEntity> where TEntity : class
 {
     private readonly GerenciadorTarefasContext _dbContext;
 
-    public BaseRepository(GerenciadorTarefasContext dbContext)
+    public TarefaRepositorio(GerenciadorTarefasContext dbContext)
     {
         _dbContext = dbContext;
     }
@@ -38,7 +38,7 @@ namespace Repositorio
     }
 
     public void Delete(TEntity entity)
-    {
+    {   
         _dbContext.Set<TEntity>().Remove(entity);
     }
      public async Task<bool> SaveChangesAsync()

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Repositorio.Interfaces
 {
-    public interface IBaseRepository<TEntity>
+    public interface ITarefaRepositorio<TEntity>
     {
         Task<TEntity> GetByIdAsync(int id);
         Task<IEnumerable<TEntity>> GetAllAsync();
@@ -14,6 +14,4 @@ namespace Repositorio.Interfaces
         void Delete(TEntity entity);
         Task<bool> SaveChangesAsync();
     }
-
-
 }

@@ -4,64 +4,65 @@ using System.Linq;
 using System.Threading.Tasks;
 using Entidade;
 using Microsoft.AspNetCore.Mvc;
+using Repositorio;
 using Repositorio.Interfaces;
+using Servico.Interfaces;
 
 namespace Servico
 {
-    public class TarefaServico
+    public class TarefaServico : ITarefaServico
     {
-        public class TarefaService
+        private readonly ITarefaRepositorio<Tarefa> _tarefaRepositorio;
+
+        public TarefaServico(ITarefaRepositorio<Tarefa> TarefaRepositorio)
         {
-            private readonly IBaseRepository<Tarefa> _TarefaRepository;
+            _tarefaRepositorio = TarefaRepositorio;
+        }
 
-            public TarefaService(IBaseRepository<Tarefa> TarefaRepository)
+        public async Task<IEnumerable<Tarefa>> GetAllTarefasAsync()
+        {
+            return await _tarefaRepositorio.GetAllAsync();
+        }
+
+
+        public async Task<Tarefa> GetTarefaByIdAsync(int id)
+        {
+            return await _tarefaRepositorio.GetByIdAsync(id);
+        }
+
+
+        public async Task<Tarefa> AddTarefa(Tarefa tarefa)
+        {
+            try
             {
-                _TarefaRepository = TarefaRepository;
+                _tarefaRepositorio.AddAsync(tarefa);
+                await _tarefaRepositorio.SaveChangesAsync();
+
+                return tarefa;
             }
-
-            public async Task<IEnumerable<Tarefa>> GetAllTarefasAsync()
+            catch (Exception ex)
             {
-                return await _TarefaRepository.GetAllAsync();
-            }
-
-
-
-            public async Task<Tarefa> GetTarefaByIdAsync(int id)
-            {
-                return await _TarefaRepository.GetByIdAsync(id);
-            }
-
-
-            public async Task<Tarefa> PostTarefaAsync([FromBody] Tarefa tarefa)
-            {
-                try
-                {
-                    tarefa.Descricao = tarefa.Descricao;
-                    tarefa.Titulo = tarefa.Titulo;
-                    tarefa.Status = tarefa.Status;
-
-                    await _TarefaRepository.AddAsync(tarefa);
-                    await _TarefaRepository.SaveChangesAsync();
-
-                    return tarefa;
-                }
-                catch (Exception ex)
-                {
-                    throw new Exception("Ocorreu um erro ao adicionar a tarefa.", ex);
-                }
-            }
-
-
-            public void UpdateTarefa(Tarefa Tarefa)
-            {
-                _TarefaRepository.Update(Tarefa);
-            }
-
-            public void DeleteTarefa(Tarefa Tarefa)
-            {
-                _TarefaRepository.Delete(Tarefa);
+                throw new Exception("Ocorreu um erro ao adicionar a tarefa.", ex);
             }
         }
 
+
+        public async Task UpdateTarefa(Tarefa Tarefa)
+        {
+            _tarefaRepositorio.Update(Tarefa);
+            await _tarefaRepositorio.SaveChangesAsync();
+        }
+
+        public async Task DeleteTarefa(Tarefa Tarefa)
+        {
+            _tarefaRepositorio.Delete(Tarefa);
+           await _tarefaRepositorio.SaveChangesAsync();
+        }
+
+        Task ITarefaServico.AddTarefa(Tarefa entity)
+        {
+            throw new NotImplementedException();
+        }
     }
+
 }

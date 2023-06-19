@@ -2,6 +2,8 @@ using System.Linq;
 using Entidade;
 using Microsoft.AspNetCore.Mvc;
 using Repositorio.DataContext;
+using Servico;
+using Servico.Interfaces;
 using static Servico.TarefaServico;
 
 namespace GerenciadorTarefas_Api.Controllers
@@ -11,24 +13,24 @@ namespace GerenciadorTarefas_Api.Controllers
     [Route("api/tarefa")]
     public class TarefaController : ControllerBase
     {
-        private readonly TarefaService _TarefaService;
+        private readonly ITarefaServico _tarefaServico;
 
-        public TarefaController(TarefaService TarefaService)
+        public TarefaController(ITarefaServico tarefaServico)
         {
-            _TarefaService = TarefaService;
+            _tarefaServico = tarefaServico;
         }
 
         [HttpGet]
         public async Task<IActionResult> GetAllTarefas()
         {
-            var Tarefas = await _TarefaService.GetAllTarefasAsync();
+            var Tarefas = await _tarefaServico.GetAllTarefasAsync();
             return Ok(Tarefas);
         }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetTarefaById(int id)
         {
-            var Tarefa = await _TarefaService.GetTarefaByIdAsync(id);
+            var Tarefa = await _tarefaServico.GetTarefaByIdAsync(id);
             if (Tarefa == null)
                 return NotFound();
 
@@ -38,25 +40,25 @@ namespace GerenciadorTarefas_Api.Controllers
         [HttpPost]
         public async Task<IActionResult> AddTarefa(Tarefa Tarefa)
         {
-            await _TarefaService.PostTarefaAsync(Tarefa);
+            await _tarefaServico.AddTarefa(Tarefa);
             return Ok();
         }
 
         [HttpPut]
         public IActionResult UpdateTarefa(Tarefa Tarefa)
         {
-            _TarefaService.UpdateTarefa(Tarefa);
+            _tarefaServico.UpdateTarefa(Tarefa);
             return Ok();
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteTarefaAsync(int id)
         {
-            var Tarefa = await _TarefaService.GetTarefaByIdAsync(id);
+            var Tarefa = await _tarefaServico.GetTarefaByIdAsync(id);
             if (Tarefa == null)
                 return NotFound();
 
-            _TarefaService.DeleteTarefa(Tarefa);
+            _tarefaServico.DeleteTarefa(Tarefa);
             return Ok();
         }
 
