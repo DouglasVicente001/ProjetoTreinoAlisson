@@ -13,7 +13,6 @@ namespace Servico.Interfaces
         Task AddTarefa(Tarefa entity);
         Task UpdateTarefa(Tarefa entity);
         Task DeleteTarefa(Tarefa entity);
-
     }
 }
 

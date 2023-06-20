@@ -14,9 +14,9 @@ namespace Servico
     {
         private readonly ITarefaRepositorio<Tarefa> _tarefaRepositorio;
 
-        public TarefaServico(ITarefaRepositorio<Tarefa> TarefaRepositorio)
+        public TarefaServico(ITarefaRepositorio<Tarefa> tarefaRepositorio)
         {
-            _tarefaRepositorio = TarefaRepositorio;
+            _tarefaRepositorio = tarefaRepositorio;
         }
 
         public async Task<IEnumerable<Tarefa>> GetAllTarefasAsync()
@@ -29,7 +29,6 @@ namespace Servico
         {
             return await _tarefaRepositorio.GetByIdAsync(id);
         }
-
 
         public async Task<Tarefa> AddTarefa(Tarefa tarefa)
         {
@@ -46,7 +45,6 @@ namespace Servico
             }
         }
 
-
         public async Task UpdateTarefa(Tarefa Tarefa)
         {
             _tarefaRepositorio.Update(Tarefa);
@@ -56,7 +54,7 @@ namespace Servico
         public async Task DeleteTarefa(Tarefa Tarefa)
         {
             _tarefaRepositorio.Delete(Tarefa);
-           await _tarefaRepositorio.SaveChangesAsync();
+            await _tarefaRepositorio.SaveChangesAsync();
         }
 
         Task ITarefaServico.AddTarefa(Tarefa entity)
@@ -64,5 +62,4 @@ namespace Servico
             throw new NotImplementedException();
         }
     }
-
 }
