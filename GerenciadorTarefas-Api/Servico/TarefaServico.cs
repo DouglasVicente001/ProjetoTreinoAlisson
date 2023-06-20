@@ -30,19 +30,10 @@ namespace Servico
             return await _tarefaRepositorio.GetByIdAsync(id);
         }
 
-        public async Task<Tarefa> AddTarefa(Tarefa tarefa)
+        public async Task AddTarefa([FromBody] Tarefa tarefa)
         {
-            try
-            {   
-                _tarefaRepositorio.AddAsync(tarefa);
-                await _tarefaRepositorio.SaveChangesAsync();
-
-                return tarefa;
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("Ocorreu um erro ao adicionar a tarefa.", ex);
-            }
+            await _tarefaRepositorio.AddAsync(tarefa);
+            await _tarefaRepositorio.SaveChangesAsync();
         }
 
         public async Task UpdateTarefa(Tarefa Tarefa)
@@ -55,11 +46,6 @@ namespace Servico
         {
             _tarefaRepositorio.Delete(Tarefa);
             await _tarefaRepositorio.SaveChangesAsync();
-        }
-
-        Task ITarefaServico.AddTarefa(Tarefa entity)
-        {
-            throw new NotImplementedException();
         }
     }
 }

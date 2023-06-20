@@ -38,10 +38,10 @@ namespace GerenciadorTarefas_Api.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddTarefa(Tarefa Tarefa)
+        public async Task<IActionResult> AddTarefa(Tarefa tarefa)
         {
-            await _tarefaServico.AddTarefa(Tarefa);
-            return Ok();
+            await _tarefaServico.AddTarefa(tarefa);
+            return Ok(tarefa);
         }
 
         [HttpPut]
