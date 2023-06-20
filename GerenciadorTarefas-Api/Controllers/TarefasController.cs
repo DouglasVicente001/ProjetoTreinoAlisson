@@ -23,18 +23,18 @@ namespace GerenciadorTarefas_Api.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAllTarefas()
         {
-            var Tarefas = await _tarefaServico.GetAllTarefasAsync();
-            return Ok(Tarefas);
+            var tarefas = await _tarefaServico.GetAllTarefasAsync();
+            return Ok(tarefas);
         }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetTarefaById(int id)
         {
-            var Tarefa = await _tarefaServico.GetTarefaByIdAsync(id);
-            if (Tarefa == null)
+            var tarefa = await _tarefaServico.GetTarefaByIdAsync(id);
+            if (tarefa == null)
                 return NotFound();
 
-            return Ok(Tarefa);
+            return Ok(tarefa);
         }
 
         [HttpPost]
@@ -44,24 +44,22 @@ namespace GerenciadorTarefas_Api.Controllers
             return Ok(tarefa);
         }
 
-        [HttpPut]
-        public IActionResult UpdateTarefa(Tarefa Tarefa)
+        [HttpPatch]
+        public async Task<IActionResult> UpdateTarefa(Tarefa tarefa)
         {
-            _tarefaServico.UpdateTarefa(Tarefa);
-            return Ok();
+            await _tarefaServico.UpdateTarefa(tarefa);
+            return Ok(tarefa);
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteTarefaAsync(int id)
         {
-            var Tarefa = await _tarefaServico.GetTarefaByIdAsync(id);
-            if (Tarefa == null)
+            var tarefa = await _tarefaServico.GetTarefaByIdAsync(id);
+            if (tarefa == null)
                 return NotFound();
 
-            _tarefaServico.DeleteTarefa(Tarefa);
-            return Ok();
+            await _tarefaServico.DeleteTarefa(tarefa);
+            return Ok(tarefa);
         }
-
-        
     }
 }

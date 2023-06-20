@@ -28,14 +28,16 @@ namespace Repositorio
             await _context.Set<TEntity>().AddAsync(entity);
         }
 
-        public void Update(TEntity entity)
+        public Task Update(TEntity entity)
         {
             _context.Set<TEntity>().Update(entity);
+            return Task.CompletedTask;
         }
 
-        public void Delete(TEntity entity)
+        public Task Delete(TEntity entity)
         {
             _context.Set<TEntity>().Remove(entity);
+            return Task.CompletedTask;
         }
         public async Task<bool> SaveChangesAsync()
         {

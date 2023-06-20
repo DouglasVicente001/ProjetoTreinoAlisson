@@ -36,9 +36,18 @@ namespace Servico
             await _tarefaRepositorio.SaveChangesAsync();
         }
 
-        public async Task UpdateTarefa(Tarefa Tarefa)
+        public async Task UpdateTarefa([FromBody] Tarefa tarefa)
         {
-            _tarefaRepositorio.Update(Tarefa);
+            var tarefaExistente = await _tarefaRepositorio.GetByIdAsync(tarefa.Id);
+
+            if (tarefaExistente == null)
+            {
+                throw new InvalidOperationException("Tarefa não encontrada");
+            }
+
+            tarefaExistente.Titulo = tarefa.Titulo;
+            tarefaExistente.Descricao = tarefa.Descricao;
+            await _tarefaRepositorio.Update(tarefaExistente);
             await _tarefaRepositorio.SaveChangesAsync();
         }
 

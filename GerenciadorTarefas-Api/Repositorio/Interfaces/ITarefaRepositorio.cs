@@ -10,8 +10,8 @@ namespace Repositorio.Interfaces
         Task<TEntity> GetByIdAsync(int id);
         Task<IEnumerable<TEntity>> GetAllAsync();
         Task AddAsync(TEntity entity);
-        void Update(TEntity entity);
-        void Delete(TEntity entity);
+        Task Update(TEntity entity);
+        Task Delete(TEntity entity);
         Task<bool> SaveChangesAsync();
     }
 }
