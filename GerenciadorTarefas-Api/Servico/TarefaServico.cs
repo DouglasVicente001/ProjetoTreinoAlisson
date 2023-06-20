@@ -33,7 +33,7 @@ namespace Servico
         public async Task<Tarefa> AddTarefa(Tarefa tarefa)
         {
             try
-            {
+            {   
                 _tarefaRepositorio.AddAsync(tarefa);
                 await _tarefaRepositorio.SaveChangesAsync();
 
