@@ -1,23 +1,28 @@
-using System.Linq;
-using Entidade;
 using Microsoft.AspNetCore.Mvc;
-using Repositorio.DataContext;
-using Servico;
+using Repositorio.DTOS;
 using Servico.Interfaces;
-using static Servico.TarefaServico;
+using System;
+using System.Threading.Tasks;
 
 namespace GerenciadorTarefas_Api.Controllers
 {
-
     [ApiController]
-    [Route("api/tarefa")]
-    public class TarefaController : ControllerBase
+    [Route("api/[controller]")]
+    public class TarefasController : ControllerBase
     {
         private readonly ITarefaServico _tarefaServico;
 
-        public TarefaController(ITarefaServico tarefaServico)
+        public TarefasController(ITarefaServico tarefaServico)
         {
             _tarefaServico = tarefaServico;
+        }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetTarefaById(int id)
+        {
+            var tarefa = await _tarefaServico.GetTarefaByIdAsync(id);
+
+            return Ok(tarefa);
         }
 
         [HttpGet]
@@ -27,39 +32,28 @@ namespace GerenciadorTarefas_Api.Controllers
             return Ok(tarefas);
         }
 
-        [HttpGet("{id}")]
-        public async Task<IActionResult> GetTarefaById(int id)
-        {
-            var tarefa = await _tarefaServico.GetTarefaByIdAsync(id);
-            if (tarefa == null)
-                return NotFound();
-
-            return Ok(tarefa);
-        }
-
         [HttpPost]
-        public async Task<IActionResult> AddTarefa(Tarefa tarefa)
+        public async Task<IActionResult> AddTarefa(TarefaDTO tarefaDTO)
         {
-            await _tarefaServico.AddTarefa(tarefa);
-            return Ok(tarefa);
+            await _tarefaServico.AddTarefa(tarefaDTO);
+            return Ok(tarefaDTO);
         }
 
-        [HttpPatch]
-        public async Task<IActionResult> UpdateTarefa(Tarefa tarefa)
+        [HttpPatch("{id}")]
+        public async Task<IActionResult> UpdateTarefa(int id, TarefaDTO tarefaDTO)
         {
-            await _tarefaServico.UpdateTarefa(tarefa);
-            return Ok(tarefa);
+            await _tarefaServico.UpdateTarefa(tarefaDTO);
+            return Ok(tarefaDTO);
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteTarefaAsync(int id)
+        public async Task<IActionResult> DeleteTarefa(int id)
         {
-            var tarefa = await _tarefaServico.GetTarefaByIdAsync(id);
-            if (tarefa == null)
-                return NotFound();
-
-            await _tarefaServico.DeleteTarefa(tarefa);
-            return Ok(tarefa);
+            var tarefaDTO = await _tarefaServico.GetTarefaByIdAsync(id);
+            {
+                await _tarefaServico.DeleteTarefa(tarefaDTO);
+                return Ok(tarefaDTO);
+            }
         }
     }
 }

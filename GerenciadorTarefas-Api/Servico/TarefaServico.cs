@@ -1,10 +1,11 @@
-using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
+using Repositorio.DTOS;
+using System;
 using System.Linq;
 using System.Threading.Tasks;
 using Entidade;
-using Microsoft.AspNetCore.Mvc;
-using Repositorio;
+using Repositorio.DTOS;
 using Repositorio.Interfaces;
 using Servico.Interfaces;
 
@@ -19,41 +20,50 @@ namespace Servico
             _tarefaRepositorio = tarefaRepositorio;
         }
 
-        public async Task<IEnumerable<Tarefa>> GetAllTarefasAsync()
+        public async Task<IEnumerable<TarefaDTO>> GetAllTarefasAsync()
         {
-            return await _tarefaRepositorio.GetAllAsync();
+            var tarefas = await _tarefaRepositorio.GetAllAsync();
+            return tarefas.Select(TarefaDTO.ConvertToDTO);
         }
 
-
-        public async Task<Tarefa> GetTarefaByIdAsync(int id)
+        public async Task<TarefaDTO> GetTarefaByIdAsync(int id)
         {
-            return await _tarefaRepositorio.GetByIdAsync(id);
+            var tarefa = await _tarefaRepositorio.GetByIdAsync(id);
+            return TarefaDTO.ConvertToDTO(tarefa);
         }
 
-        public async Task AddTarefa([FromBody] Tarefa tarefa)
+        public async Task AddTarefa(TarefaDTO tarefaDTO)
         {
+            var tarefa = TarefaDTO.ConvertToEntity(tarefaDTO);
             await _tarefaRepositorio.AddAsync(tarefa);
             await _tarefaRepositorio.SaveChangesAsync();
         }
 
-        public async Task UpdateTarefa([FromBody] Tarefa tarefa)
+        public async Task UpdateTarefa(TarefaDTO tarefaDTO)
         {
-            var tarefaExistente = await _tarefaRepositorio.GetByIdAsync(tarefa.Id);
+            var tarefaExistente = await _tarefaRepositorio.GetByIdAsync(tarefaDTO.Id);
 
             if (tarefaExistente == null)
             {
                 throw new InvalidOperationException("Tarefa não encontrada");
             }
 
-            tarefaExistente.Titulo = tarefa.Titulo;
-            tarefaExistente.Descricao = tarefa.Descricao;
-            await _tarefaRepositorio.Update(tarefaExistente);
+            tarefaExistente.Titulo = tarefaDTO.Titulo;
+            tarefaExistente.Descricao = tarefaDTO.Descricao;
+
             await _tarefaRepositorio.SaveChangesAsync();
         }
 
-        public async Task DeleteTarefa(Tarefa Tarefa)
+        public async Task DeleteTarefa(TarefaDTO tarefaDTO)
         {
-            _tarefaRepositorio.Delete(Tarefa);
+            var tarefa = await _tarefaRepositorio.GetByIdAsync(tarefaDTO.Id);
+
+            if (tarefa == null)
+            {
+                throw new InvalidOperationException("Tarefa não encontrada");
+            }
+
+            await _tarefaRepositorio.Delete(tarefa);
             await _tarefaRepositorio.SaveChangesAsync();
         }
     }

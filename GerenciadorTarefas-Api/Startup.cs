@@ -32,8 +32,8 @@ namespace GerenciadorTarefas_Api
             // Adicione as dependências
             // services.AddScoped(typeof(Servico<>), typeof(SuaImplementacaoServico<>));
 
-            services.AddTransient<ITarefaRepositorio<Tarefa>, TarefaRepositorio<Tarefa>>();
-            services.AddTransient<ITarefaServico, TarefaServico>();
+            services.AddScoped<ITarefaRepositorio<Tarefa>, TarefaRepositorio<Tarefa>>();
+            services.AddSingleton<ITarefaServico, TarefaServico>();
 
 
             services.AddControllers()
