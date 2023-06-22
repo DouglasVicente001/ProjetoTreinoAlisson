@@ -33,7 +33,7 @@ namespace GerenciadorTarefas_Api
             // services.AddScoped(typeof(Servico<>), typeof(SuaImplementacaoServico<>));
 
             services.AddScoped<ITarefaRepositorio<Tarefa>, TarefaRepositorio<Tarefa>>();
-            services.AddSingleton<ITarefaServico, TarefaServico>();
+            services.AddScoped<ITarefaServico, TarefaServico>();
 
 
             services.AddControllers()
